@@ -1,0 +1,21 @@
+@import "~@angular/material/theming";
+
+/* This mixin is responsible for generating basic toolbar settings.
+ * $background - The background of the toolbar.
+ * $color - The text color of the toolbar.
+ */
+@mixin bzl-toolbar($background, $color) {
+  background: $background;
+  color: $color;
+
+  padding: 12px 16px;
+  font-size: 24px;
+  text-align: right;
+  font-weight: bold;
+
+  position: sticky;
+  top: 0;
+  z-index: 999;
+
+  @include mat-elevation(4);
+}
